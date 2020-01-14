@@ -1,12 +1,12 @@
 ---
 deployent:
-	tasks:
-		- export DEPLOYPATH=/home/user/public_html/
-		- /bin/cp ./public_html/projects $DEPLOYPATH
-		- /bin/cp ./public_html/index.html $DEPLOYPATH
-		- /bin/cp ./public_html/style.css $DEPLOYPATH
-		- /bin/cp ./public_html/data $DEPLOYPATH
-		- /bin/cp ./public_html/404.html $DEPLOYPATH
-		- /bin/cp ./public_html/Contact.html $DEPLOYPATH
-		- /bin/cp ./public_html/Projects.html $DEPLOYPATH
-		- /bin/cp ./public_html/resources $DEPLOYPATH
+    tasks:
+        - export DEPLOYPATH=/home/zevpogre/public_html/
+        - /bin/cp ./public_html/projects $DEPLOYPATH
+        - /bin/cp ./public_html/index.html $DEPLOYPATH
+        - /bin/cp ./public_html/style.css $DEPLOYPATH
+        - /bin/cp ./public_html/data $DEPLOYPATH
+        - /bin/cp ./public_html/404.html $DEPLOYPATH
+        - /bin/cp ./public_html/Contact.html $DEPLOYPATH
+        - /bin/cp ./public_html/Projects.html $DEPLOYPATH
+        - /bin/cp ./public_html/resources $DEPLOYPATH
