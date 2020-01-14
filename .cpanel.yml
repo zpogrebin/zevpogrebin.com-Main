@@ -9,4 +9,3 @@ deployent:
         - /bin/cp ./public_html/404.html $DEPLOYPATH
         - /bin/cp ./public_html/Contact.html $DEPLOYPATH
         - /bin/cp ./public_html/Projects.html $DEPLOYPATH
-        - /bin/cp ./public_html/resources $DEPLOYPATH
