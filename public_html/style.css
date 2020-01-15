@@ -508,12 +508,21 @@ h3 {
 .sidepic {
 	width: 50%;
 	float: left;
-	height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.sidepic img {
+    flex-shrink: 0;
+    max-width: 100%;
 }
 
 .sidetext {
 	width: 50%;
 	float: left;
+	display: table-column;
 }
 
 .sidetext p {
@@ -526,12 +535,8 @@ h3 {
 	.sidepic, .sidetext {
 		width: 100%;
 	}
-
-	.paddingrow {
-		display: block;
-	}
 }
 
 .paddingrow {
-	display: block;
+	display: table;
 }
