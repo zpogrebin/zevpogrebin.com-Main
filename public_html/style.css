@@ -496,3 +496,42 @@ h6.sidebarh6 {
 .centeritem h6 {
 	line-height: 50px;
 }
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: 200;
+	margin-top: 11px;
+	margin-bottom: 0px;
+}
+
+.sidepic {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+.sidetext {
+	width: 50%;
+	float: left;
+}
+
+.sidetext p {
+	margin-block: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 650px) {
+	.sidepic, .sidetext {
+		width: 100%;
+	}
+
+	.paddingrow {
+		display: block;
+	}
+}
+
+.paddingrow {
+	display: block;
+}
