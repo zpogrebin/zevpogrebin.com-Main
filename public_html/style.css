@@ -507,22 +507,15 @@ h3 {
 
 .sidepic {
 	width: 50%;
-	float: left;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-
-.sidepic img {
-    flex-shrink: 0;
-    max-width: 100%;
+	display: table-cell;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .sidetext {
 	width: 50%;
-	float: left;
-	display: table-column;
+	display: table-cell;
 }
 
 .sidetext p {
@@ -531,10 +524,17 @@ h3 {
 	margin-left: 15px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 	.sidepic, .sidetext {
+		display: block;
 		width: 100%;
+		float: none;
 	}
+
+	.paddingrow {
+		height: 100%;
+	}
+
 }
 
 .paddingrow {
