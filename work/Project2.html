@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Zev Pogrebin</title>
+	<title>Zev Pogrebin | Project Name</title>
 	<link rel="stylesheet" type="text/css" href="../public_html/style.css">
 </head>
 
@@ -27,6 +27,14 @@
         vertical-align: middle;
         padding-top: 9px;
         margin-right: 30px;
+        
+    }
+
+    @media screen and (max-width: 575px) {
+        .sw_topbar h3 {
+            color: black;
+            font-size: 5px;
+        }
     }
 
     #sw_navright a {
@@ -46,9 +54,14 @@
     }
 
     h1 {
-        padding-top: 20px;
-        margin-left: 80px;
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-left: 15px;
         margin-bottom: 0.2em;
+    }
+
+    h2 {
+        margin-left: 15px;
     }
 
 
@@ -57,7 +70,7 @@
 <body>
 	<nav class="sw_topbar">
         <img style="float: left; height: 50px;" src="http://zevpogrebin.com/resources/Partlogowhite.svg"> 
-        <h3 style="float: left; margin-left: 20px;">Page Title</h3>
+        <h3 style="position: absolute; z-index: -1; margin-left: 70px;">2019 Graphic Design Projects</h3>
         <div id=sw_navright>
             <a href="http://zevpogrebin.com"  class="sidebarbutton"><h6 class="sidebarh6">Home</h6></a>
             <a href="http://zevpogrebin.com/Projects.html" class="sidebarbutton"><h6 class="sidebarh6">Back</h6></a>
@@ -66,13 +79,21 @@
         
     </nav>
 	<article>
-        <h1>Header A</h1>
         <div class="paddingrow">
             <div class="sidetext">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis risus ullamcorper, venenatis leo id, mattis odio. Fusce tincidunt ultricies vestibulum. Integer eleifend lorem at turpis laoreet, non convallis felis pulvinar. Aliquam interdum posuere porttitor. Morbi vel leo nulla. Mauris lobortis sagittis risus quis convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat sapien, sit amet efficitur orci. Sed aliquam felis ipsum, quis sollicitudin ex pharetra sit amet. Mauris eu arcu accumsan, mollis purus nec, euismod urna.<br>
+                <h1>TITLE 1</h1>
+                <h2>SUBTITLE 1</h2>
+                <p>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                </p>
             </div>
-            <div class="sidepic">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png"/>
+            <div class="sidepic" style="background-image: url(http://zevpogrebin.com/resources/kindthingfbh.png);"></div>
+        </div>
+        <h1>Heading 2 (pre_</h1>
+        <div class="paddingrow">
+            <div class="sidepic" style="background-image: url();"></div>
+            <div class="sidetext">
+                <p>TEXT</p>
             </div>
         </div>
     </article>
