@@ -2,14 +2,14 @@
 <html lang="en-US">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>Zev Pogrebin | DMASS</title>
-	<link rel="stylesheet" type="text/css" href="../style.css">
+	<title>Zev Pogrebin | Channel Strip</title>
+	<link rel="stylesheet" type="text/css" href="../public_html/style.css">
 </head>
 <style>
 	@media screen and (min-width: 770px), (max-height: 400px) {
 		.bodybackgroundspecial {
 			position: fixed;
-			background: url(http://zevpogrebin.com/resources/DMASS-3.jpg) no-repeat center center fixed;
+			background: url(http://zevpogrebin.com/resources/channelstripimg.jpg) no-repeat center center fixed;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
@@ -19,11 +19,15 @@
 			top: 0px;
 			z-index: -1;
 		}
+
+		article {
+			padding-bottom: 20px;
+		}
 	}
 	@media screen and (max-width: 770px) and (min-height: 400px) {
 		.bodybackgroundspecial {
 			position: fixed;
-			background: url(http://zevpogrebin.com/resources/DMASS-3.jpg) no-repeat center center fixed;
+			background: url(http://zevpogrebin.com/resources/channelstripimg.jpg) no-repeat center center fixed;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
@@ -32,6 +36,22 @@
 			height: 100%;
 			z-index: -1;
 		}
+
+		article {
+			padding-bottom: 80px;
+		}
+	}
+
+	.description {
+		padding-top: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 5px;
+		margin-bottom: 25px;
+		background-color: rgba(242, 242, 242, 0.7);
+		max-width: 350px;
+		margin: 20px auto;
+		border-radius: 3px;
 	}
 
 </style>
@@ -55,25 +75,21 @@
 	<div class="bodybackgroundspecial"></div>
 	<div class="sidebar1"><h5><a href="../Projects.html">Projects</a></h5></div>
 	<div class="sidebar2"><h5 class="rightside">DMASS</h5></div>
-	<!-- <header>
-		<h1>DMASS Synthesizer</h1>
-		<h2>A prototype for a digitally controlled analogue synthesizer</h2>
-	</header> -->
 	<article>
 		<div class="centeritem">
-			<h1>Project DMASS Documentation</h1>
+			<div class = "description">
+				<h1>Channel Strip</h1>
+				<p style="text-align: left;">
+					A channel strip is a device used in the professional audio industry for recording and processing of sound. Channel strips generally consist of a microphone preamplifier, an equalizer, a filter, and other effects. <br><br>For my high school's senior capstone, I designed one of these devices. It has a transformer based mic preamplifier, a high pass filter, and a 4 band EQ. The preamp has continuous gain control from +20dB to +60dB. The channel strip's built in HPF can be engaged at 60Hz and 120Hz, and has a selectable slope of 12 and 18 dB per octave. The EQ section contains 2 bands of inductor based EQ and 2 bands of active EQ. Each band has 5 selectable frequencies and continuous gain control from -15dB to +15dB.<br><br> The design incorporates a hand engraved aluminum front panel and an analog VU meter. The circuitry is layed out on a custom PCB with through hole components.
+				</p>
+			</div>
+			
 			<h6>
-				<a class="bodybutton" href="https://samuelburnscohen.com/projects?project=dmass">
-					Sam Cohen: Partner's Website
+				<a class="bodybutton" href="http://zevpogrebin.com/resources/channelstripmanual.pdf">
+					User Manual
 				</a><br>
-				<a class="bodybutton" href="http://zevpogrebin.com/resources/DMASS Information.pdf">
-					Download Project Info PDF
-				</a><br>
-				<a class="bodybutton" href="http://zevpogrebin.com/resources/DMASSBLOCKDIAG.pdf">
-					Download Block Diagram
-				</a><br>
-				<a class="bodybutton" href="http://zevpogrebin.com/resources/DMASSVCO.pdf">
-					Download VCO Schematic
+				<a class="bodybutton" href="http://zevpogrebin.com/resources/channelstripdesignpack.pdf">
+					Technical Documentation
 				</a><br>
 			</h6>
 		</div>
