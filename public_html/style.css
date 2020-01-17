@@ -376,7 +376,7 @@ h5.rightside {
 	border-left: 4px solid red;
 }
 
-.projectsquare {
+.projectsquare, .projectsquarealt {
 	height: 200px;
 	width: 200px;
 	background-color: #E5E5E5;
@@ -393,7 +393,11 @@ h5.rightside {
 	transition-duration: 0.25s;
 }
 
-.projectsquare h4 {
+.projectsquarealt:hover {
+	transition-duration: 0.25s;
+}
+
+.projectsquare h4, .projectsquarealt h4 {
 	font-family: Helvetica, Arial, Sans-Serif;
 	font-weight: bold;
 	font-size: 14px;
@@ -411,7 +415,7 @@ h6.sidebarh6 {
 	transform: skewX(7deg);
 }
 
-.projectsquare h6 {
+.projectsquare h6, .projectsquarealt h6 {
 	font-family: Helvetica, Arial, Sans-Serif;
 	font-weight: lighter;
 	font-size: 12px;
@@ -420,7 +424,7 @@ h6.sidebarh6 {
 	margin-right: 10px;
 }
 
-.projectsquare img {
+.projectsquare img, .projectsquarealt img {
 	width: 100%;
 }
 
@@ -456,7 +460,7 @@ h6.sidebarh6 {
 	padding: 8px 0;
 }
 
-.projectsquare:hover > .projectsquareflag {
+.projectsquare:hover > .projectsquareflag, .projectsquarealt:hover > .projectsquareflag {
 	background-color: rgba(255,255,255,0.6);
 	color: black;
 	opacity: 0.6;

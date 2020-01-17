@@ -17,7 +17,7 @@ $(document).ready(function() {
 			if (url != "") {
 				$("article").append(
 					'<a href="'+url+'">' +
-						'<div class="projectsquare">' + 
+						'<div class="projectsquarealt">' + 
 							'<div class="projectsquaresend"><p>&#x21F1;</p></div>'+
 							'<div class="projectsquareflag">' +
 								'<h6><img src="./resources/clock.svg"/>'
