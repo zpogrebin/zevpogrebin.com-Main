@@ -517,6 +517,7 @@ h3 {
 	width: 50%;
 	display: table-cell;
 	padding-right: 15px;
+	padding-bottom: 20px;
 }
 
 .sidetext p {
@@ -534,7 +535,10 @@ h3 {
 
 	.sidepic {
 		height: 200px;
-		margin-top: 20px;
+	}
+
+	.paddingrow {
+		border-bottom: 5px black solid;
 	}
 
 }
