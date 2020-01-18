@@ -17,7 +17,7 @@ $(document).ready(function() {
 			if (url != "") {
 				$("article").append(
 					'<a href="'+url+'">' +
-						'<div class="projectsquarealt">' + 
+						'<div class="projectsquare">' + 
 							'<div class="projectsquaresend"><p>&#x21F1;</p></div>'+
 							'<div class="projectsquareflag">' +
 								'<h6><img src="./resources/clock.svg"/>'
@@ -31,18 +31,17 @@ $(document).ready(function() {
 					'</a>')
 			} else {
 				$("article").append(
-					'<a>' +
-						'<div class="projectsquare">' + 
-							'<div class="projectsquareflag">' +
-								'<h6><img src="./resources/clock.svg"/>'
-								+year+'</h6><h6><img src="./resources/tags.svg"/>'
-								+tags+'</h6></div><img src="'
-								+imgsrc+'"><h4>'
-								+title+'</h4><h6>'
-								+subtitle+'</h6>' +
-							'</div>'+
+					'<div class="projectsquarealt">' + 
+						'<div class="projectsquareflag">' +
+							'<h6><img src="./resources/clock.svg"/>'
+							+year+'</h6><h6><img src="./resources/tags.svg"/>'
+							+tags+'</h6></div><img src="'
+							+imgsrc+'"><h4>'
+							+title+'</h4><h6>'
+							+subtitle+'</h6>' +
 						'</div>'+
-					'</a>')
+					'</div>'
+				)
 			}
 		}
 	});
