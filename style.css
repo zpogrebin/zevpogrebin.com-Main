@@ -395,6 +395,7 @@ h5.rightside {
 
 .projectsquarealt:hover {
 	transition-duration: 0.25s;
+	cursor: default;
 }
 
 .projectsquare h4, .projectsquarealt h4 {
