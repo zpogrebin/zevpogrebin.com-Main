@@ -1,0 +1,82 @@
+[
+	{
+		"title":"Sound Design: 2019",
+		"url":"project/sd2019.html",
+		"imgsrc":"./resources/SD2019.jpg",
+		"subtitle":"We're Here, Charlie Brown, Putnam Cty Spelling Bee, DYHYS",
+		"year":"2019",
+		"tags":"theater"	
+	},
+	{
+		"title":"Graphic Design: 2019",
+		"url":"project/gd2019.html",
+		"imgsrc":"./resources/kindthingfbh.png",
+		"subtitle":"3ps 'O Show' Poster, Kind Thing; Nice Thing Campaign, more",
+		"year":"2019",
+		"tags":"Graphic Design"
+	},
+	{
+		"title":"DMASS Synthesizer",
+		"url":"project/dmass.html",
+		"imgsrc":"./resources/image-4.jpg",
+		"subtitle":"A prototype for a digitally controlled analogue synthesizer",
+		"year":"2019",
+		"tags":"electronics"
+	},
+	{
+		"title":"Channel Strip",
+		"url":"project/channelstrip.html",
+		"imgsrc":"./resources/image-2.jpg",
+		"subtitle":"A mic pre and inductor based EQ with transformer based input",
+		"year":"2018",
+		"tags":"electronics"
+	},
+	{
+		"title":"Gum Bichromate Photos",
+		"url":"",
+		"imgsrc":"/resources/bichromate1.jpg",
+		"subtitle":"An exploration of a color alternative photo process",
+		"year":"2017",
+		"tags":"photo"
+	},
+	{
+		"title":"Metal Menorah",
+		"url":"",
+		"imgsrc":"/resources/menorah1.jpg",
+		"subtitle":"A blacksmithed menorah",
+		"year":"2017",
+		"tags":"metalworking, misc"
+	},
+	{
+		"title":"Leather Satchel",
+		"url":"",
+		"imgsrc":"/resources/satchel1.jpg",
+		"subtitle":"A leather satchel bag made to hold a 13' MacBook Pro laptop",
+		"year":"2018",
+		"tags":"misc"
+	},
+	{
+		"title":"Minimalist Forms",
+		"url":"",
+		"imgsrc":"/resources/minimalist1.jpg",
+		"subtitle":"A series of three minimalist sculptures",
+		"year":"2018",
+		"tags":"sculpture, metalworking"
+	},
+	{
+		"title":"Seperation Forms",
+		"url":"",
+		"imgsrc":"/resources/separationform1.jpg",
+		"subtitle":"A series of several sculptures",
+		"year":"2018",
+		"tags":"sculpture, metalworking"
+	},
+	{
+		"title":"Otieza Forms",
+		"url":"",
+		"imgsrc":"/resources/otieza1.jpg",
+		"subtitle":"A series of three sculptures inspired by Jorge Otieza",
+		"year":"2018",
+		"tags":"sculpture, metalworking"
+	}
+]
