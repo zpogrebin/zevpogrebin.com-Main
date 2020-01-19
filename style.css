@@ -522,7 +522,7 @@ h3 {
 	position: relative;
 	width: 50%;
 	display: table-cell;
-	padding-right: 15px;
+	/* padding-right: 15px; */
 	padding-bottom: 20px;
 }
 
