@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zev Pogrebin | Channel Strip</title>
+	<link rel="stylesheet" type="text/css" href="http://zevpogrebin.com/style.css">
+</head>
+<style>
+	@media screen and (min-width: 770px), (max-height: 400px) {
+		.bodybackgroundspecial {
+			position: fixed;
+			background: url(http://zevpogrebin.com/resources/channelstripimg.jpg) no-repeat center center fixed;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			left: 150px;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			z-index: -1;
+		}
+
+		article {
+			padding-bottom: 20px;
+		}
+	}
+	@media screen and (max-width: 770px) and (min-height: 400px) {
+		.bodybackgroundspecial {
+			position: fixed;
+			background: url(http://zevpogrebin.com/resources/channelstripimg.jpg) no-repeat center center fixed;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			top: 17%;
+			width: 800px;
+			height: 100%;
+			z-index: -1;
+		}
+
+		article {
+			padding-bottom: 80px;
+		}
+	}
+
+	.description {
+		padding-top: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 5px;
+		margin-bottom: 25px;
+		background-color: rgba(242, 242, 242, 0.7);
+		max-width: 350px;
+		margin: 20px auto;
+		border-radius: 3px;
+	}
+
+</style>
+<body>
+	<nav>
+		<div class="navbarbackgrond"></div>
+		<div class="navbarlogo">
+			<picture>
+				<source srcset="http://zevpogrebin.com/resources/FullLogoWhite.svg" media="(min-width: 770px)"/>
+				<source srcset="http://zevpogrebin.com/resources/FullLogoWhite.svg" media="(max-height: 400px) and max-width: 770px)"/>
+				<source srcset="http://zevpogrebin.com/resources/Partlogowhite.svg" media="(max-width: 770px) and (min-height: 400px)"/>
+				<img class="navbarlogo" src="http://zevpogrebin.com/resources/FullLogoWhite.svg">
+			</picture>
+		</div>		<div class="navbarcontent">
+			<a href="../index.html" class="sidebarbutton"><h6 class="sidebarh6">Home</h6></a>
+			<a href="" class="sidebarbutton"><h6 class="sidebarh6">About</h6></a>
+			<a href="../Projects.html" class="sidebarbutton"><h6>Projects</h6 class="sidebarh6"></a>
+			<a href="../Contact.html" class="sidebarbutton"><h6 class="sidebarh6">Contact</h6></a>
+		</div>
+	</nav>
+	<div class="bodybackgroundspecial"></div>
+	<div class="sidebar1"><h5><a href="../Projects.html">Projects</a></h5></div>
+	<div class="sidebar2"><h5 class="rightside">DMASS</h5></div>
+	<article>
+		<div class="centeritem">
+			<div class = "description">
+				<h1>Channel Strip</h1>
+				<p style="text-align: left;">
+					A channel strip is a device used in the professional audio industry for recording and processing of sound. Channel strips generally consist of a microphone preamplifier, an equalizer, a filter, and other effects. <br><br>For my high school's senior capstone, I designed one of these devices. It has a transformer based mic preamplifier, a high pass filter, and a 4 band EQ. The preamp has continuous gain control from +20dB to +60dB. The channel strip's built in HPF can be engaged at 60Hz and 120Hz, and has a selectable slope of 12 and 18 dB per octave. The EQ section contains 2 bands of inductor based EQ and 2 bands of active EQ. Each band has 5 selectable frequencies and continuous gain control from -15dB to +15dB.<br><br> The design incorporates a hand engraved aluminum front panel and an analog VU meter. The circuitry is layed out on a custom PCB with through hole components.
+				</p>
+			</div>
+			
+			<h6>
+				<a class="bodybutton" href="http://zevpogrebin.com/resources/channelstripmanual.pdf">
+					User Manual
+				</a><br>
+				<a class="bodybutton" href="http://zevpogrebin.com/resources/channelstripdesignpack.pdf">
+					Technical Documentation
+				</a><br>
+			</h6>
+		</div>
+	</article>
+	<div class="bottomright">
+	</div>
+</body>
+</html>
