@@ -519,6 +519,7 @@ h3 {
 }
 
 .sidetext {
+	position: relative;
 	width: 50%;
 	display: table-cell;
 	padding-right: 15px;
