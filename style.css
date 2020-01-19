@@ -240,7 +240,7 @@ h1 {
 h2 {
 	font-family: 'IBM Plex Sans', 'helvetica', sans-serif;
 	font-style: italic;
-	font-weight: lighter;
+	font-weight: 400;
 	font-size: 20px;
 	margin-top: 0em;
 }
@@ -399,7 +399,7 @@ h5.rightside {
 }
 
 .projectsquare h4, .projectsquarealt h4 {
-	font-family: Helvetica, Arial, Sans-Serif;
+	font-family: 'IBM Plex Sans', 'helvetica', sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	margin-block-start: 0em;
@@ -417,8 +417,8 @@ h6.sidebarh6 {
 }
 
 .projectsquare h6, .projectsquarealt h6 {
-	font-family: Helvetica, Arial, Sans-Serif;
-	font-weight: lighter;
+	font-family: 'IBM Plex Sans', 'helvetica', sans-serif;	
+	font-weight: 400;
 	font-size: 12px;
 	margin-left: 10px;
 	margin-bottom: 0px;
@@ -439,7 +439,7 @@ h6.sidebarh6 {
 
 .errorsidebar h1 {
 	font-size: 64px;
-	font-weight: lighter;
+	font-weight: 400;
     margin-block-end: 0.1em;
 }
 
