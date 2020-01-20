@@ -59,15 +59,17 @@
     }
 
     h2 {
-        margin-left: 15px;
+        /* margin-left: 15px; */
+        margin-top: 25px;
     }
 
         /*HANDLING OF 70/30 2 column layout*/
     .altsidetext {
         width: 30%;
 	    display: table-cell;
-        padding-right: 15px;
+        margin-right: 15px;
         float: left;
+        margin-left: 15px;
     }
 
     .altsidepic {
@@ -75,7 +77,7 @@
         display: table-cell;
         /*Must add pic manually through img*/
         padding: 0px 0px;
-        float: right;
+        float: left;
     }
 
     .altsidepic img {
@@ -86,10 +88,9 @@
         .altsidetext, .altsidepic {
             display: block;
             width: 100%;
-            float: none;
+            float: right;
         }
     }
-
 
 </style>
 
@@ -105,7 +106,28 @@
     </nav>
 	<article>
 
-        
+        <div class="paddingrow">
+            <div class="altsidepic">
+                <img src="../resources/bichromate1.jpg">
+            </div>
+            <div class="altsidetext">
+                <h2>
+                    About gum bichromate printing
+                </h2>
+                <p>
+                    Gum bichromate printing is a UV contact printing process which uses an emulsion with gum, potassium bichromate, and pigment. When a dichromate and a gum (from a gum tree) are mixed, they form a light sensitive compound. If exposed to UV light, the mixture hardens. This gum-bichromate can be spread on paper, forming a photographic emulsion. In areas exposed to light, the emulsion sticks to the paper. In contrast, it can be easily washed off if unexposed. Adding a pigment to the emulsion can yield an image. By repeating the process with multiple pigments, full color prints are possible. The process of creating gum bichromate images is extremely tedious, with each emulsion layer taking hours between prep, exposure, washing, and drying.
+                </p>
+                <h6 style="text-align: center;">
+                    <a class="bodybutton" href="../resources/Gum print.pdf">How it works</a> 
+                </h6>
+                <h2>
+                    About the project
+                </h2>
+                <p>
+                    Abcd
+                </p>
+            </div>
+        </div>
 
     </article>
 </body>
