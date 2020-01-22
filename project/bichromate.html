@@ -102,17 +102,38 @@
         display: block;
     }
 
+    #bichromatebackground img {
+        display: none;
+    }
+
     @media screen and (max-width: 850px) {
         .altsidetext {
+            position: relative;
             display: block;
             width: 100%;
             padding-left:0px;
             padding-right: 0px;
-            padding: 0px;
+            margin: 0px;
+            left: 0px;
+            right: 0px;
+            top: auto;
         }
 
         #bichromatebackground {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            top: 0px;
+            height: auto;
+        }
+
+        #bichromatebackground img {
             display: block;
+            flex-shrink: 0;
+            height: auto;
+            width: 100%;
         }
     }
 </style>
@@ -139,7 +160,9 @@
                     <a class="bodybutton" href="../resources/Gum print.pdf">How it works</a> 
                 </h6>
             </div>
-            <div id="bichromatebackground"></div>
+            <div id="bichromatebackground">
+                <img src="../resources/bichromate1.jpg"/>
+            </div>
     </article>
 </body>
 </html>
