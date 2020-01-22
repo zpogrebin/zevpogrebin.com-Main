@@ -9,18 +9,51 @@
 <style>
 	.description {
 		padding-top: 25px;
-		padding-left: 25px;
+		padding-left: 200px;
 		padding-right: 25px;
 		padding-bottom: 5px;
 		margin-bottom: 25px;
-		background-color: rgba(242, 242, 242, 0.7);
 		max-width: 350px;
-		margin: 20px auto;
+		margin: 100px auto;
 		border-radius: 3px;
+		text-shadow: 0px -1px 10px #F2F2F2;
 	}
 
 	h1, h2 {
 		text-align: right;
+	}
+
+	#topanimationbar {
+		position: fixed;
+		top: 0px;
+		z-index: -1;
+		width: 100%;
+		height: 173.21px;
+		background-image: url("./resources/artboard1linear.svg");
+		background-size: 950.2px 173.21px;
+		animation: topbarscroll 100s infinite linear;
+		-webkit-animation: topbarscroll 100s infinite linear;
+		position: fixed;
+	}
+
+	@keyframes topbarscroll {
+		from {
+			background-position: 0px 0px;
+		}
+		to {
+			background-position: 950.2px 0px;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.description {
+			padding-left: 25px;
+			padding-top: 100px;
+		}
+		#topanimationbar {
+			bottom: 0px;
+			top: auto;
+		}
 	}
 </style>
 
@@ -38,13 +71,15 @@
 		<div class="navbarcontent">
 			<a href="index.html" class="sidebarbutton"><h6 class="sidebarh6">Home</h6></a>
 			<a href="About.html" class="sidebarbutton"><h6 class="sidebarh6">About</h6></a>
-			<a href="Projects.html" class="sidebarbutton"><h6>Projects</h6 class="sidebarh6"></a>
+			<a href="Projects.html" class="sidebarbutton"><h6 class="sidebarh6">Projects</h6></a>
 			<a href="Contact.html" class="sidebarbutton"><h6 class="sidebarh6">Contact</h6></a>
 		</div>
 		
 	</nav>
 	<div class="sidebar1"><h5 class="rightside">About Me</h5></div>
+	<div id="topanimationbar"></div>
 	<article class="description">
+		
 		<h1>
 			About
 		</h1>
@@ -53,8 +88,8 @@
 			Zev Pogrebin is a second year electrical engineer at Tufts University. 
 		</p>
 		<h6 style="text-align: center;">
-			<a class="bodybutton" href="http://zevpogrebin.com/archive/kindthing/kindthing.html">Projects</a>
-			<a class="bodybutton" href="http://zevpogrebin.com/resources/kinthingposter.png">Contact Me</a>
+			<a class="bodybutton" href="http://zevpogrebin.com/Projects.html">Projects</a>
+			<a class="bodybutton" href="http://zevpogrebin.com/Contact.html">Contact Me</a>
 		</h6>
 		<h2>
 			About this website
