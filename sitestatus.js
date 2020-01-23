@@ -6,6 +6,6 @@ $(document).ready(function() {
 		//Console Log status
 		console.log(status.status);
 		//handle creating html
-		("#status").append('<span style="color: '+status.color+';">'+status.status+'</span>');
+		$("#status").append('<span style="color: '+status.color+';">'+status.status+'</span>');
 	});
 });
