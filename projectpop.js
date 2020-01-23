@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// {"title":" ","url":" ","imgsrc":" ","subtitle":" ","contenthtml":" "}, 
 
-	$.getJSON("http://zevpogrebin.com/data/projectdata.json", function(projectarray) { //change url to fix
+	$.getJSON("http://zevpogrebin.com/data/sitestatus.json", function(projectarray) { //change url to fix
 		var title, imgsrc, subtitle, url;
 		for (var i = 0; i < projectarray.length; i++) {
 			title = projectarray[i].title;
