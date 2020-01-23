@@ -4,24 +4,102 @@
 <head>
 	<title>Zev Pogrebin | About</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,700,700i|IBM+Plex+Sans+Condensed:400,400i,700,700i|IBM+Plex+Sans:100,100i,200,200i,400,400i,600,600i,700,700i|IBM+Plex+Serif:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
 	.description {
 		padding-top: 25px;
-		padding-left: 25px;
+		padding-left: 200px;
 		padding-right: 25px;
 		padding-bottom: 5px;
 		margin-bottom: 25px;
-		background-color: rgba(242, 242, 242, 0.7);
 		max-width: 350px;
-		margin: 20px auto;
+		margin: 100px auto;
 		border-radius: 3px;
+		text-shadow: 0px -1px 10px #F2F2F2;
 	}
 
 	h1, h2 {
 		text-align: right;
 	}
+
+	#topanimationbar {
+		position: fixed;
+		top: 0px;
+		z-index: -1;
+		width: 100%;
+		height: 173.21px;
+		background-image: url("./resources/artboard1linear.svg");
+		background-size: 950.2px 173.21px;
+		animation: topbarscroll 100s infinite linear;
+		-webkit-animation: topbarscroll 100s infinite linear;
+		position: fixed;
+	}
+
+	@keyframes topbarscroll {
+		from {
+			background-position: 0px 0px;
+		}
+		to {
+			background-position: 950.2px 0px;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.description {
+			padding-left: 25px;
+			padding-top: 100px;
+		}
+		#topanimationbar {
+			bottom: 0px;
+			top: auto;
+		}
+
+		[data-aos="revfade"] {
+			opacity: 0;
+			transition-property: opacity;
+		}
+
+		[data-aos="revfade"].aos-animate {
+  			opacity: 0.5;
+		}
+		
+		#desktopview {
+			 display: none;
+			 opacity: 0;
+		}
+		#mobileview {
+			display: inline;
+			opacity: 1;
+		}
+	}
+
+	@media screen and (min-width: 800px) {
+		[data-aos="revfade"] {
+			opacity: 1;
+			transition-property: opacity;
+		}
+
+		[data-aos="revfade"].aos-animate {
+			opacity: 0;
+		}
+		#desktopview {
+			 display: inline;
+			 opacity: 1;
+		}
+		#mobileview {
+			display: none;
+			opacity: 0;
+		}
+	}
+
+	#desktopview, #mobileview {
+		transition-duration: 0.5s;
+
+	}
+
 </style>
 
 <body>
@@ -38,29 +116,47 @@
 		<div class="navbarcontent">
 			<a href="index.html" class="sidebarbutton"><h6 class="sidebarh6">Home</h6></a>
 			<a href="About.html" class="sidebarbutton"><h6 class="sidebarh6">About</h6></a>
-			<a href="Projects.html" class="sidebarbutton"><h6>Projects</h6 class="sidebarh6"></a>
+			<a href="Projects.html" class="sidebarbutton"><h6 class="sidebarh6">Projects</h6></a>
 			<a href="Contact.html" class="sidebarbutton"><h6 class="sidebarh6">Contact</h6></a>
 		</div>
 		
 	</nav>
 	<div class="sidebar1"><h5 class="rightside">About Me</h5></div>
+	<div id="topanimationbar" data-aos="revfade" data-aos-anchor="#head" data-aos-anchor-placement="top-top"></div>></div>
 	<article class="description">
-		<h1>
+		
+		<h1 id="head">
 			About
 		</h1>
 		<h2>About Me</h2>
 		<p>
-			Zev Pogrebin is a second year electrical engineer at Tufts University. 
+			Zev Pogrebin is a second year electrical engineer at Tufts University. He enjoys making things, whether circuits, tangible objects, designs, sounds, or art. After tinkering with electronics and computers as a child, his interest in EE intensified during high school when he interned for a recording engineer. Zev became curious about how all the equipment—the amplifiers, filters, and other systems—worked. As Zev delves into these designs, the intersection between art and engineering continues to facinate him. In his spare time, he has found himself learning about type design, pattern making in fashion, film photography, and book arts. 
 		</p>
-		<h6 style="text-align: center;">
-			<a class="bodybutton" href="http://zevpogrebin.com/archive/kindthing/kindthing.html">Projects</a>
-			<a class="bodybutton" href="http://zevpogrebin.com/resources/kinthingposter.png">Contact Me</a>
+		<h6 style="text-align: center; padding-bottom: 25px;">
+			<a class="bodybutton" href="http://zevpogrebin.com/Projects.html">Projects</a>
+			<a class="bodybutton" href="http://zevpogrebin.com/Contact.html">Contact Me</a>
 		</h6>
 		<h2>
 			About this website
 		</h2>
+		<p>
+			This website was created by Zev Pogrebin as a personal website and a project portfolio. No website builders or GUI design tools were used. Zev also created all of the images, graphics, and download materials. The font family IBM Plex Mono was used for each page of the website. The tools jquery and AOS were used.
+		</p>
+		<h2>Website Status</h2>
+		<div>
+			<h6 id="mobileview">Current view: Mobile</h6>
+			<h6 id="desktopview">Current view: Desktop</h6>
+			<h6 id="status">Website status: </h6>
+		</div>
 	</article>
 	<div class="bottomright">
 	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200
+		});
+	</script>
+	<script src="sitestatus.js"></script>
 </body>
 </html>
