@@ -7,6 +7,7 @@
 
 <style>
     nav.sw_topbar  {
+        opacity: 0.7;
         background-color: black;
         color: #F2F2F2;
         width: 100%;
@@ -14,6 +15,12 @@
         z-index: 2;
         display: inline-block;
         padding: 10px;
+        transition-duration: 500ms;
+    }
+
+    nav.sw_topbar:hover {
+        opacity: 1;
+        transition-duration: 600ms;
     }
 
     a.sidebarbutton {
@@ -78,6 +85,6 @@
         </div>    
         
     </nav>
-    <iframe style="position: fixed; top: 60px;" src="https://indd.adobe.com/embed/5309ffc6-fa80-4aab-897f-cf1fe7fd5957?startpage=1&allowFullscreen=true" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+    <iframe style="position: fixed;" src="https://indd.adobe.com/embed/5309ffc6-fa80-4aab-897f-cf1fe7fd5957?startpage=1&allowFullscreen=true" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
 </body>
 </html>
