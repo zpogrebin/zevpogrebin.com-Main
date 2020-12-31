@@ -1,5 +1,13 @@
 [
 	{
+		"title":"Discrete Op-Amp",
+		"url":"project/opamp.html",
+		"imgsrc":"./resources/opampsquare.jpg",
+		"subtitle":"I design and build a MOSFET based operational amplifier",
+		"year":"2020",
+		"tags":"electronics"	
+	},
+	{
 		"title":"Sound Design: 2019",
 		"url":"project/sd2019.html",
 		"imgsrc":"./resources/SD2019.jpg",
