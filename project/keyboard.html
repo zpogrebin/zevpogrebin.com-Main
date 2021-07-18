@@ -2,7 +2,7 @@
 <html lang="en-US">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>Zev Pogrebin | Sound Design Projects 2019</title>
+	<title>Zev Pogrebin | Mechanical Keyboard Project &eta;</title>
     <link rel="stylesheet" type="text/css" href="http://zevpogrebin.com/style.css">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,700,700i|IBM+Plex+Sans+Condensed:400,400i,700,700i|IBM+Plex+Sans:100,100i,200,200i,400,400i,600,600i,700,700i|IBM+Plex+Serif:300,300i,400,400i,700,700i&display=swap" rel="stylesheet"><style>
     nav.sw_topbar  {
@@ -149,7 +149,7 @@
                 <h1>Design Considerations</h1>
                 <h2>Layout, materials, etc...</h2>
                 <p>
-                    The project arose out of a desire to have a keyboard with the ability to record simple macros and a keyboard layout with numerical and function keys on the left-hand side. Such a configuration allows for easier access of numerical shortcuts like "command+1" and permits the user to input numbers using the number pad while keeping their left hand on the mouse. I wanted the keyboard to be as thin as possible. I selected Cherry MX Brown style mechanical switches and a 3&deg; incline. Sellable keyboards require adjustable incline, but I omitted it in this design to keep the profile as slim as possible. I designed a sandwich type enclosure. The original enclosure design used some hardwood, but this was omitted in favor of PLA and acrylic due to COVID's resource limitations.
+                    The project arose out of a desire to have a keyboard with the ability to record simple macros and a keyboard layout with numerical and function keys on the left-hand side. Such a configuration allows for easier access of numerical shortcuts like "command+1" and permits the user to input numbers using the number pad while keeping their left hand on the mouse. <br><br>I wanted the keyboard to be as thin as possible. I selected Cherry MX Brown style mechanical switches and a 3&deg; incline. Sellable keyboards require adjustable incline, but I omitted it in this design to keep the profile as slim as possible. I designed a sandwich type enclosure. At first, many components in the design were sheet metal with plastics sandwitched between. This would have increased materials costs significantly&mdash;fabricating the sheet metal is very expensive. Other iterations used stained walnut, but this was replaced with PLA and acrylic based on their availability and ease of production.
                 </p>
             </div>
         </div>
@@ -162,7 +162,7 @@
                     The Teensy 3.2 microcontroller was selected as the microcontroller for this keyboard. It has a built in HID keyboard library, allowing for quick development and is widely used within the mechanical keyboard community. This microcontroller was also used in DMASS. The keyboard layout was devided into 19 columns and 5 rows to accomodate the 24 through-hole GPIO connections on the Teensy. To keep the device thin, a hole was cut for the microcontroller, allowing it to fit flush with the main bnoard. Three status LEDs were hand wired to the 3.2's surface mount pads.
                 </p>
                 <h6 style="text-align: center;">
-                    <a class="bodybutton" href="../resources/keyboard_schematic.pdf">Download Schematic and Layout</a>
+                    <a class="bodybutton" href="../resources/Keyboard.zip">Download Schematic and Layout</a>
                 </h6>
             </div>
             <div class="sidepic" style="background-image: url(../resources/keyboard_pcb.jpg); background-position: right center;"></div>
@@ -174,11 +174,27 @@
             <div class="sidetext">
                 <h1>The Aesthetic</h1>
                 <p>
-                    The keycap and enclosure design were the two main areas for creativity in the industrial design of the device. Both were heavily constrained by cost, the processes and materials that I had available, and my own capabilities. The enclosure design went through many iterations. At first the bottom and the design was also sheet metal with no incline and plastics sandwitched between. This would have increased materials costs significantly--fabricating the sheet metal is very expensive. Other iterations used stained walnut. Eventually, I arrived at a 3D printed and laser cut sandwich enclosure. The keycaps were produced by <a style="color: blue" href="http://maxkeyboards.com">Max Keyboards</a>. I used IBM Plex (the same font used in this website) for the key labels, and the icons are part of the SF symbols set.
+                    The keycap and enclosure design were the two main areas for creativity in the industrial design of the device. Both were heavily constrained by cost, the processes and materials that I had available, and my own capabilities. The enclosure design went through many iterations. To accomodate the maximum 3d printing dimensions and keep the device thin, the bottom-enclosure is in three parts, allowing some of the PCB to show through. This also allows for space for a minimalist palmrest to sit in the future. <br><br>The keycaps were produced by <a style="color: blue" href="http://maxkeyboards.com">Max Keyboards</a>. I used IBM Plex (the same font used in this website) for the key labels. The icons are part of the Apple SF symbols set, which makes them familiar to Apple users.
                 </p>
             </div>
         </div>
 
+        <!-- The Code -->
+        <div class="paddingrow">
+            <div class="sidetext">
+                <h1>The Code</h1>
+                <p>
+                    The microcontroller was programmed in C++ (with Arduino and Teensy libraries), and the firmware program for the keyboard was designed for maximum modularity. Each key is an instance of a 'Key' class, which allows for each key to be individually configured, retain a number of attributes, and store its state during operation. The keyboard has four key mode layers (and the shift/caps layer); which are stored as top-level variables in a wrapper class which handles key scanning. Macro storage was a significant challenge, as the microcontroller only has 2048 bits of user accessable EEPROM. The memory space was divided into fixed groups of 8 bit signed chunks. Positive integers 0-127 indicate key press codes and negative numbers represent the corresponding key releases.
+                </p>
+                <h6 style="text-align: center;">
+                    <a class="bodybutton" href="https://github.com/zpogrebin/keybd_driver">Source Code</a>
+                </h6>
+            </div>
+            <div class="sidepic" style="background-image: url(../resources/keyboard_code.png); background-position: left center;"></div>
+        </div>
+        <div>
+            <img src="../resources/keyboard_full.jpg" width="100%" style="border-top: 3px black groove;">
+        </div>
 
     </article>
 </body>
