@@ -1,5 +1,13 @@
 [
 	{
+		"title":"Mechanical Keyboard",
+		"url":"project/kyeboard.html",
+		"imgsrc":"./resources/keyboard_thumb.jpg",
+		"subtitle":"Designing a mechanical keyboard with a custom layout",
+		"year":"2021",
+		"tags":"electronics"	
+	},
+	{
 		"title":"Discrete Op-Amp",
 		"url":"project/opamp.html",
 		"imgsrc":"./resources/opampsquare.jpg",
@@ -59,7 +67,7 @@
 		"title":"Leather Satchel",
 		"url":"",
 		"imgsrc":"/resources/satchel1.jpg",
-		"subtitle":"A leather satchel bag made to hold a 13' MacBook Pro laptop",
+		"subtitle":"A leather satchel bag made to hold a 13" MacBook Pro laptop",
 		"year":"2018",
 		"tags":"misc"
 	},

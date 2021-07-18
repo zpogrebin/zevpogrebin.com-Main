@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zev Pogrebin | Sound Design Projects 2019</title>
+    <link rel="stylesheet" type="text/css" href="http://zevpogrebin.com/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,700,700i|IBM+Plex+Sans+Condensed:400,400i,700,700i|IBM+Plex+Sans:100,100i,200,200i,400,400i,600,600i,700,700i|IBM+Plex+Serif:300,300i,400,400i,700,700i&display=swap" rel="stylesheet"><style>
+    nav.sw_topbar  {
+        background-color: black;
+        color: #F2F2F2;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    a.sidebarbutton {
+        /* float: right; */
+        width: auto;
+    }
+
+    #sw_navright {
+        height: 100%;
+        float: right;
+        vertical-align: middle;
+        padding-top: 9px;
+        margin-right: 30px;
+        
+    }
+
+    @media screen and (max-width: 575px) {
+        .sw_topbar h3 {
+            color: black;
+            font-size: 5px;
+        }
+    }
+
+    #sw_navright a {
+        float: right;
+    }
+
+    header {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    article {
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+    h1 {
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 0.2em;
+    }
+
+    h2 {
+        margin-left: 15px;
+    }
+
+        /*HANDLING OF 70/30 2 column layout*/
+    .altsidetext {
+        width: 30%;
+	    display: table-cell;
+        padding-right: 15px;
+        float: left;
+    }
+
+    .altsidepic {
+        width: 67%;
+        display: table-cell;
+        /*Must add pic manually through img*/
+        padding: 0px 0px;
+        float: right;
+    }
+
+    .altsidepic img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px){
+        .altsidetext, .altsidepic {
+            display: block;
+            width: 100%;
+            float: none;
+        }
+    }
+
+    #img_offerseat {
+        padding-left: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #text_offerseat {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%); 
+        padding-bottom: 0px;
+    }
+
+    #whblackbar {
+        bottom: 0px; 
+        position: absolute; 
+        background-color: rgb(45, 40, 41); 
+        color: white; 
+        padding: 10px 0; 
+        width: 100%;
+        text-align: right;
+    }
+</style>
+
+<body>
+	<nav class="sw_topbar">
+        <img style="float: left; height: 50px;" src="http://zevpogrebin.com/resources/Partlogowhite.svg"> 
+        <h3 style="position: absolute; z-index: -1; margin-left: 70px;">Mechanical Keyboard Project &#951;</h3>
+        <div id=sw_navright>
+            <a href="http://zevpogrebin.com"  class="sidebarbutton"><h6 class="sidebarh6">Home</h6></a>
+            <a href="http://zevpogrebin.com/Projects.html" class="sidebarbutton"><h6 class="sidebarh6">Back</h6></a>
+            
+        </div>    
+        
+    </nav>
+	<article>
+
+        <!-- GEN ABOUT -->
+        <div class="paddingrow">
+            <div class="sidetext">
+                <h1>About the Project</h1>
+                <h2>Project &eta; is a mechanical keyboard with a custom layout. I designed the layout, enclosure, 
+                    keycap labels, circuitry, PCB, and firmware.</h2>
+                <h6 style="text-align: center;">
+                    
+                </h6>
+            </div>
+            <div class="sidepic" style="background-image: url(../resources/keyboard_frontview.jpg); background-position: center top;"></div>
+        </div>
+        
+        <!-- The Design -->
+        <div class="paddingrow">
+            <div class="sidepic" style="background-image: url(../resources/keyboard_numpad.jpg);"></div>
+            <div class="sidetext">
+                <h1>Design Considerations</h1>
+                <h2>Layout, materials, etc...</h2>
+                <p>
+                    The project arose out of a desire to have a keyboard with the ability to record simple macros and a keyboard layout with numerical and function keys on the left-hand side. Such a configuration allows for easier access of numerical shortcuts like "command+1" and permits the user to input numbers using the number pad while keeping their left hand on the mouse. I wanted the keyboard to be as thin as possible. I selected Cherry MX Brown style mechanical switches and a 3&deg; incline. Sellable keyboards require adjustable incline, but I omitted it in this design to keep the profile as slim as possible. I designed a sandwich type enclosure. The original enclosure design used some hardwood, but this was omitted in favor of PLA and acrylic due to COVID's resource limitations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Circuit Design -->
+        <div class="paddingrow">
+            <div class="sidetext">
+                <h1>The System</h1>
+                <p>
+                    The Teensy 3.2 microcontroller was selected as the microcontroller for this keyboard. It has a built in HID keyboard library, allowing for quick development and is widely used within the mechanical keyboard community. This microcontroller was also used in DMASS. The keyboard layout was devided into 19 columns and 5 rows to accomodate the 24 through-hole GPIO connections on the Teensy. To keep the device thin, a hole was cut for the microcontroller, allowing it to fit flush with the main bnoard. Three status LEDs were hand wired to the 3.2's surface mount pads.
+                </p>
+                <h6 style="text-align: center;">
+                    <a class="bodybutton" href="../resources/keyboard_schematic.pdf">Download Schematic and Layout</a>
+                </h6>
+            </div>
+            <div class="sidepic" style="background-image: url(../resources/keyboard_pcb.jpg); background-position: right center;"></div>
+        </div>
+        
+        <!-- Industrial Design -->
+        <div class="paddingrow">
+            <div class="sidepic" style="background-image: url(../resources/keyboard_keycapdes.png); background-position: right center;"></div>
+            <div class="sidetext">
+                <h1>The Aesthetic</h1>
+                <p>
+                    The keycap and enclosure design were the two main areas for creativity in the industrial design of the device. Both were heavily constrained by cost, the processes and materials that I had available, and my own capabilities. The enclosure design went through many iterations. At first the bottom and the design was also sheet metal with no incline and plastics sandwitched between. This would have increased materials costs significantly--fabricating the sheet metal is very expensive. Other iterations used stained walnut. Eventually, I arrived at a 3D printed and laser cut sandwich enclosure. The keycaps were produced by <a style="color: blue" href="http://maxkeyboards.com">Max Keyboards</a>. I used IBM Plex (the same font used in this website) for the key labels, and the icons are part of the SF symbols set.
+                </p>
+            </div>
+        </div>
+
+
+    </article>
+</body>
+</html>
